@@ -1,0 +1,33 @@
+@use "../../App";
+
+.user-box {
+  display: block;
+  float: left;
+  width: 20vw;
+  height: 20vh;
+  margin: 10px 10px;
+  background-color: App.$highlight-color;
+  color: App.$text-color;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.search-page {
+  width: 100%;
+  height: 100%;
+}
+
+.user-name {
+  color: #222;
+  font-weight: 1000;
+  font-family: "Consolas";
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.song-info {
+  display: inline-block;
+  color: App.$text-color;
+  margin-top: 10px;
+  font-family: "Consolas";
+}

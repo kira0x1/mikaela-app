@@ -1,0 +1,31 @@
+$bg-color: #e7e6e6;
+$primary-color: #f16123;
+$text-color: #c43f36;
+$link-color: #533aad;
+$highlight-color: #e2e2e2;
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Paytone+One&family=Roboto+Mono&display=swap");
+
+input,
+textarea {
+  font-family: "Roboto Mono";
+}
+
+.App {
+  text-align: center;
+  color: $text-color;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $primary-color;
+}
+
+.App-link {
+  color: $link-color;
+}

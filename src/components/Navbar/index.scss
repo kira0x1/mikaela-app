@@ -1,0 +1,26 @@
+@use "../../App.scss";
+
+.nav-bar {
+  height: 8vh;
+  background-color: rgb(225, 225, 225);
+  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: rgb(124, 157, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      color: rgb(67, 51, 131);
+    }
+  }
+}
