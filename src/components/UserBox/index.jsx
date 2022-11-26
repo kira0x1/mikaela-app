@@ -3,7 +3,7 @@ import "./index.scss";
 
 export default function UserBox({ user }) {
   return (
-    <Link className="user-box">
+    <Link to={`/user/${user.id}`} className="user-box">
       <div className="user-name">{user.username}</div>
       <div className="user-tag">
         <span className="user-data-title">tag: </span>
