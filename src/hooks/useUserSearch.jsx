@@ -29,9 +29,7 @@ export default function useUserSearch(query, pageNumber) {
   useEffect(() => {
     setLoading(true);
 
-    if (!query) return;
-
-    const res = userSearch.search(query, { limit: 10 });
+    const res = query ? userSearch.search(query, { limit: 10 }) : [];
     const data = [];
 
     for (const u of res) {

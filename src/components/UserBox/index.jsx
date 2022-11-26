@@ -7,6 +7,8 @@ export default function UserBox({ user }) {
       <span className="user-name">{user.username}</span>
       <br />
       <span className="song-info">songs: {user.favorites.length}</span>
+      <br />
+      <span className="id-info">id: {user.id}</span>
     </Link>
   );
 }

@@ -31,3 +31,13 @@
   margin-top: 10px;
   font-family: "Consolas";
 }
+
+.id-info {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 2vw;
+  word-wrap: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}

@@ -18,6 +18,7 @@ export default function Search() {
     <div className="search-page">
       <input type="text" onChange={handleSearch}></input>
       <div className="results-container">
+        <div>{loading && "Loading..."}</div>
         {users.map((u) => {
           return <UserBox key={`id_${u.id}`} user={u} />;
         })}
