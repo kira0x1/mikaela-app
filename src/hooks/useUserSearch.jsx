@@ -38,7 +38,6 @@ export default function useUserSearch(query, pageNumber) {
 
     setUsers(data);
     setLoading(false);
-    console.log(data);
   }, [query, pageNumber]);
 
   return { loading, users };
