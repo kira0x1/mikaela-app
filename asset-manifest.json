@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mikaela-app/static/css/main.d74cd167.css",
-    "main.js": "/mikaela-app/static/js/main.28e74122.js",
+    "main.js": "/mikaela-app/static/js/main.0ae84aad.js",
     "static/js/787.c58b0293.chunk.js": "/mikaela-app/static/js/787.c58b0293.chunk.js",
     "index.html": "/mikaela-app/index.html",
     "main.d74cd167.css.map": "/mikaela-app/static/css/main.d74cd167.css.map",
-    "main.28e74122.js.map": "/mikaela-app/static/js/main.28e74122.js.map",
+    "main.0ae84aad.js.map": "/mikaela-app/static/js/main.0ae84aad.js.map",
     "787.c58b0293.chunk.js.map": "/mikaela-app/static/js/787.c58b0293.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d74cd167.css",
-    "static/js/main.28e74122.js"
+    "static/js/main.0ae84aad.js"
   ]
 }
