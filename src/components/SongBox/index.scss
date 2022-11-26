@@ -1,0 +1,15 @@
+@use "../../App";
+
+.song-box {
+  display: block;
+  width: 20vw;
+  height: 10vh;
+  margin: 10px 20px;
+  background-color: rgb(246, 246, 246);
+  box-shadow: rgb(172, 172, 172) 0px 0px 10px 1px;
+  color: App.$text-color;
+  word-wrap: break-word;
+  text-decoration: none;
+  text-align: left;
+  padding: 20px;
+}

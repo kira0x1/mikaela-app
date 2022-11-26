@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 import Layout from "./components/Layout";
-import UserPage from "./components/UserPage";
-import Home from "./components/Home";
+import UserPage from "./routes/UserPage";
+import Home from "./routes/Home";
 
 function App() {
   return (
