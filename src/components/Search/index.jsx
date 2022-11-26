@@ -16,7 +16,8 @@ export default function Search() {
 
   return (
     <div className="search-page">
-      <input type="text" onChange={handleSearch}></input>
+      <input type="text" className="search-bar" onChange={handleSearch}></input>
+      <div className="results-text">results: {users.length}</div>
       <div className="results-container">
         <div>{loading && "Loading..."}</div>
         {users.map((u) => {

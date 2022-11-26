@@ -1,5 +1,13 @@
+.search-bar {
+  margin: 20px 0px;
+}
 .results-container {
   background-color: rgb(237, 237, 237);
   width: 100%;
   height: 100%;
+}
+
+.results-text {
+  display: inline-block;
+  margin-left: 10px;
 }

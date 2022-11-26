@@ -30,7 +30,7 @@ export default function useUserSearch(query, pageNumber) {
     setLoading(true);
 
     const res = query ? userSearch.search(query, { limit: 10 }) : [];
-    const data = [];
+    const data = query ? [] : UserData;
 
     for (const u of res) {
       data.push(u.item);
