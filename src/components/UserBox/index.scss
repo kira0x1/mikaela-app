@@ -6,10 +6,13 @@
   width: 20vw;
   height: 20vh;
   margin: 10px 10px;
-  background-color: App.$highlight-color;
+  background-color: rgb(246, 246, 246);
+  box-shadow: rgb(172, 172, 172) 0px 0px 10px 1px;
   color: App.$text-color;
   word-wrap: break-word;
   text-decoration: none;
+  text-align: left;
+  padding: 20px;
 }
 
 .search-page {
@@ -18,26 +21,36 @@
 }
 
 .user-name {
-  color: #222;
+  color: #333;
+  font-size: 1.5vw;
   font-weight: 1000;
   font-family: "Consolas";
   text-overflow: ellipsis;
   text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.user-tag {
+  margin-bottom: 5px;
 }
 
 .song-info {
+  margin-bottom: 5px;
   display: inline-block;
   color: App.$text-color;
-  margin-top: 10px;
   font-family: "Consolas";
 }
 
 .id-info {
-  display: inline-block;
-  padding: 0px 20px;
-  font-size: 2vw;
+  margin-bottom: 5px;
+  display: block;
   word-wrap: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-all;
+  text-align: left;
+}
+
+.user-data-title {
+  color: #444;
 }
