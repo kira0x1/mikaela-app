@@ -2,11 +2,14 @@
   "name": "mikaela-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kira0x1.github.io/mikaela-app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +45,8 @@
     "react-scripts": "5.0.1",
     "sass": "^1.56.1",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
