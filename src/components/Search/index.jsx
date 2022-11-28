@@ -5,24 +5,30 @@ import UserBox from "../UserBox";
 
 export default function Search() {
   const [query, setQuery] = useState("");
-  const [pageNumber, setPageNumber] = useState(1);
 
-  const { loading, users } = useUserSearch(query, pageNumber);
+  const { loading, users } = useUserSearch(query);
 
   function handleSearch(e) {
     setQuery(e.target.value);
-    setPageNumber(1);
   }
 
   return (
     <div className="search-page">
-      <input type="text" className="search-bar" onChange={handleSearch}></input>
-      <div className="results-text">results: {users.length}</div>
+      <div className="search-container">
+        <input
+          type="text"
+          className="search-bar"
+          onChange={handleSearch}
+        ></input>
+        <div className="results-text">results: {users.length}</div>
+      </div>
       <div className="results-container">
         <div>{loading && "Loading..."}</div>
-        {users.map((u) => {
-          return <UserBox key={`id_${u.id}`} user={u} />;
-        })}
+        {users
+          .sort((a, b) => b.favorites.length - a.favorites.length)
+          .map((u) => {
+            return <UserBox key={`id_${u.id}`} user={u} />;
+          })}
       </div>
     </div>
   );
