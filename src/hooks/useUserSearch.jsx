@@ -19,15 +19,14 @@ const searchOptions = {
   keys: ["username"],
 };
 
-const searchIndex = Fuse.createIndex(["username"], UserData);
-const userSearch = new Fuse(UserData, searchOptions, searchIndex);
-
-export default function useUserSearch(query, pageNumber) {
+export default function useUserSearch(query) {
   const [loading, setLoading] = useState(true);
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
     setLoading(true);
+
+    const userSearch = new Fuse(UserData, searchOptions);
 
     const res = query ? userSearch.search(query, { limit: 10 }) : [];
     const data = query ? [] : UserData;
@@ -38,7 +37,7 @@ export default function useUserSearch(query, pageNumber) {
 
     setUsers(data);
     setLoading(false);
-  }, [query, pageNumber]);
+  }, [query]);
 
   return { loading, users };
 }

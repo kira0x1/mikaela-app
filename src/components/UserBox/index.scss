@@ -5,14 +5,14 @@
   float: left;
   width: 20vw;
   height: 20vh;
-  margin: 10px 10px;
+  margin: 10px;
   background-color: rgb(246, 246, 246);
-  box-shadow: rgb(172, 172, 172) 0px 0px 10px 1px;
-  color: App.$text-color;
+  box-shadow: rgb(172 172 172) 0px 0px 5px 0px;
+  color: #c43f36;
   word-wrap: break-word;
   text-decoration: none;
   text-align: left;
-  padding: 20px;
+  padding: 10px 10px;
 }
 
 .search-page {
